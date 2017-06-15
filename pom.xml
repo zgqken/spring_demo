@@ -9,12 +9,12 @@
   <url>http://maven.apache.org</url>
 
   <properties>
-    <spring.version>4.3.7.RELEASE</spring.version>
+    <spring.version>4.3.9.RELEASE</spring.version>
     <c3p0.version>0.9.1.2</c3p0.version>
     <waf.version>0.10.2</waf.version>
     <gaea.version>2.0.0</gaea.version>
     <powermock.version>1.6.5</powermock.version>
-    <mysql.drive.verison>5.1.30.nd.1.7</mysql.drive.verison>
+    <mysql.drive.verison>5.1.30</mysql.drive.verison>
     <version.jackson.core>2.8.1</version.jackson.core>
   </properties>
 
