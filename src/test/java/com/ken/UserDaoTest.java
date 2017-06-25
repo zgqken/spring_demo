@@ -64,6 +64,7 @@ public class UserDaoTest extends BaseSpringTest {
     @Test
     public void findById(){
         UserDO userDO = userRepository.findOne("1");
+        userDO = userRepository.findById("1");
         System.out.println(JSONObject.toJSONString(userDO));
     }
 
