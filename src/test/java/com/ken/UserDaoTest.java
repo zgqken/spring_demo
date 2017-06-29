@@ -57,7 +57,7 @@ public class UserDaoTest extends BaseSpringTest {
 
     @Test
     public void getOne(){
-        UserDO userDO =userDao.getOne(2l);
+        UserDO userDO =userDao.getOne(1l);
         System.out.println(JSONObject.toJSONString(userDO));
     }
 
