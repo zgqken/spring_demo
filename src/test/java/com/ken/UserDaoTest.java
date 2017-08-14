@@ -28,5 +28,8 @@ public class UserDaoTest extends BaseSpringTest {
     }
 
 
-
+    @Test
+    public void test1() {
+        System.out.println(30.0 / 29 * (1 - 16.8125 / 64.6875));
+    }
 }
