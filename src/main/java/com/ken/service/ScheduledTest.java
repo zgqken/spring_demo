@@ -1,14 +1,13 @@
 package com.ken.service;
 
 import org.springframework.scheduling.annotation.Scheduled;
-import org.springframework.stereotype.Component;
 
 /**
  * @author zgquan(108563)
  * @date 2018/3/15 0015
  * @since
  */
-@Component
+//@Component
 public class ScheduledTest {
 
 
