@@ -55,6 +55,7 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
 
         HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
         vendorAdapter.setGenerateDdl(true);
+        vendorAdapter.setDatabasePlatform("org.hibernate.dialect.MySQL5Dialect");
 
         LocalContainerEntityManagerFactoryBean factory = new
                 LocalContainerEntityManagerFactoryBean();
