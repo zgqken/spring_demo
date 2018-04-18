@@ -21,9 +21,11 @@ package com.ken.web.config;
                 /** 监控当前SESSION的用户 */
                 @WebInitParam(name = "principalSessionName", value = "USER_SESSION"),
                 /** 监控单个url访问数据库情况 */
-                @WebInitParam(name = "profileEnable", value = "true")
+                @WebInitParam(name = "profileEnable", value = "true"),
+
+                @WebInitParam(name = "sessionStatMaxCount", value = "2000")
         }
 )
-public class DruidStatFilter extends WebStatFilter {
+public class DruidWebStatFilter extends WebStatFilter {
 
 }
