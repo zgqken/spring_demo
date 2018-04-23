@@ -1,9 +1,9 @@
 package com.ken.web.config;
 
-        import com.alibaba.druid.support.http.WebStatFilter;
+import com.alibaba.druid.support.http.WebStatFilter;
 
-        import javax.servlet.annotation.WebFilter;
-        import javax.servlet.annotation.WebInitParam;
+import javax.servlet.annotation.WebFilter;
+import javax.servlet.annotation.WebInitParam;
 
 /**
  * @author zgquan(108563)
@@ -14,7 +14,8 @@ package com.ken.web.config;
         filterName = "druidWebStatFilter", urlPatterns = "/*",
         initParams = {
                 /** 忽略资源 */
-                @WebInitParam(name = "exclusions", value = "*.js,*.gif,*.jpg,*.bmp,*.png,*.css,*.ico,/druid/*,/static/*"),
+                @WebInitParam(name = "exclusions", value = "*.js,*.gif,*.jpg,*.bmp,*.png,*.css,*" +
+                        ".ico,/druid/*,/static/*"),
                 @WebInitParam(name = "profileEnable", value = "true"),
                 /** 监控当前COOKIE的用户 */
                 @WebInitParam(name = "principalCookieName", value = "USER_COOKIE"),
