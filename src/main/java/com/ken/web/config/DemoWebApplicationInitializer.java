@@ -25,7 +25,7 @@ public class DemoWebApplicationInitializer extends AbstractAnnotationConfigDispa
      */
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return new Class<?>[0];
+        return new Class[]{WebSecurityConfig.class};
     }
 
     /**
