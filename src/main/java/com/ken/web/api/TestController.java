@@ -3,7 +3,7 @@ package com.ken.web.api;
 import com.alibaba.fastjson.JSONObject;
 import com.ken.user.dao.UserDao;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
+
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -19,7 +19,7 @@ public class TestController {
     @Autowired
     private UserDao userDao;
 
-    @GetMapping("/test")
+//    @GetMapping("/test")
     public void test(){
         System.out.println(JSONObject.toJSONString(userDao.getList()));
     }
